@@ -53,17 +53,18 @@
 	</div>
 	
 	<div class='content'>
-		<form>
-			<label> <input type="text" value="Name and Surname" maxlength="10"  required > </label> 
-			<label> <input type="tel" value="PHONE" maxlength="10"  required ></label> 
-			<label> <input type="email" value="EMAIL ADDRESS" required> </label> 
-			<label> <input type="password" value="**********" maxlength="10"  required >
-			</label> 
+		<form method="post" onsubmit="return validform()">
+			<label> <input type="text" id="name" placeholder="Name and Surname" maxlength="30" required> </label> 
+			<label> <input type="tel" id="number" placeholder="PHONE" maxlength="10" ></label> 
+			<label> <input type="email" id="mail" placeholder="EMAIL ADDRESS" required> </label> 
+			<label> <input type="password" id="password" placeholder="**********" required><br>
 			<div class='buttonstyle'>
 				<input class='register' type="submit" value="REGISTER">  
 			</div>
 		</form>
 	</div>
+	
+	<script src="js/validform.js"></script>
 </section> 
 <div class="clearfix"></div>
 <!--end of banner --->
