@@ -1,0 +1,25 @@
+<html>
+<title>
+</title>
+
+<body onload="blink()">
+
+<div id="divtoBlink">
+</div>
+
+<script>
+function blink(){
+ 	document.getElementById("divtoBlink").innerHTML = "Red";
+	document.getElementById("divtoBlink").style.background = "yellow";
+    setTimeout("unblink()",500);
+ }
+ function unblink(){
+ 	document.getElementById("divtoBlink").innerHTML = "Yellow";
+	document.getElementById("divtoBlink").style.background = "red";
+    setTimeout("blink()",500);
+ }
+</script>
+
+</body>
+
+</html>
